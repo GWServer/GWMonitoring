@@ -1,0 +1,259 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/*********************************************/
+html, body {
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.wrapper {
+	max-width: 1200px;
+	padding: 20px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+img {
+	display: inline-block;
+	border-radius: 5px;
+	width: 80px;
+	height:80px;
+}
+
+header h1 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	color: #fff;
+	font-weight: bold;
+	margin: 50px;
+	display: inline-block;
+}
+
+.works {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;	
+}
+
+footer {
+	height: 200px;
+}
+/***********************/
+
+.redtextbold {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: red;
+	font-weight: 900;
+	margin: 50px;
+	display: block;
+}
+
+.btn {
+	height: 100px;
+	width: 300px;
+	border-radius: 5%;
+	margin: 40px;
+	background-color: #32dc72;
+	margin-top: 50px;
+	padding: 10px;
+	margin: 8px;
+	margin-right: 8px;
+	font-family: 'Open Sans', sans-serif;
+	font: black;
+	font-weight: bold;
+	display: inline-block;
+	background-repeat: no-repeat;
+	text-align: center;	
+    background-position: center center;
+    background-size: 90% 80%;
+}
+#one {
+	background-color: #FF1493;
+	background-image: url("images/1.png");
+}
+#two {
+	background-color: #FF1493;
+	background-image: url("images/2.png");
+}
+#three {
+	background-color: #FF1493;
+	background-image: url("images/3.png");
+}
+#four {
+	background-color: #FF1493;
+	background-image: url("images/4.png");
+}
+#five {
+	background-color: #FF1493;
+	background-image: url("images/5.png");
+}
+#six {
+	background-color: #FF1493;
+	background-image: url("images/6.png");
+}
+#seven {
+	background-color: #aa99ff;
+	background-image: url("images/7.png");
+}
+#eight {
+	background-color: #aa99ff;
+	background-image: url("images/8.png");
+}
+#nine {
+	background-color: #aa99ff;
+	background-image: url("images/9.png");
+}
+#ten{
+	background-color: #FFFF00;
+	background-image: url("images/10.png");
+}
+#eleven {
+	background-color: #FFFF00;
+	background-image: url("images/11.png");
+}
+#twelve {
+    background-color: #FFFF00;
+	background-image: url("images/12.png");
+}
+#thirteen {
+    background-color: #FFFF00;
+	background-image: url("images/13.png");
+}
+#fourteen {
+    background-color: #FFFF00;
+	background-image: url("images/14.png");
+}
+#fifteen {
+    background-color: #FFFF00;
+	background-image: url("images/15.png");
+}
+#sixteen {
+    background-color: #FFFF00;
+	background-image: url("images/16.png");
+}
+#seventeen {
+    background-color: #FFFF00;
+	background-image: url("images/17.png");
+}
+#eighteen {
+    background-color: #FFFF00;
+	background-image: url("images/18.png");
+}
+#nineteen {
+    background-color: #FFFF00;
+	background-image: url("images/19.png");
+}
+#twenty {
+    background-color: #FFFF00;
+	background-image: url("images/20.png");
+}
+#twentyone {
+    background-color: #FFFF00;
+	background-image: url("images/21.png");
+}
+#twentytwo {
+    background-color: #FFFF00;
+	background-image: url("images/22.png");
+}
+#twentythree {
+    background-color: #FFFF00;
+	background-image: url("images/23.png");
+}
+#twentythree {
+    background-color: #FFFF00;
+	background-image: url("images/24.png");
+}
+#twentyfive {
+    background-color: #FFFF00;
+	background-image: url("images/25.png");
+}
+#twentysix {
+    background-color: #FFFF00;
+	background-image: url("images/26.png");
+}
+#twentyseven {
+    background-color: #FFFF00;
+	background-image: url("images/27.png");
+}
