@@ -9,11 +9,11 @@ $config = array(
 
 	'db_host' => 'localhost', //Хост бд
 
-	'db_user' => 'h97352wv_monitor', //Пользователь бд
+	'db_name' => '', //Название бд
 
-	'db_pass' => 'Ser1198518', //Пароль от пользователя бд
-	
-	'db_name' => 'h97352wv_monitor', //Название бд
+	'db_user' => '', //Пользователь бд
+
+	'db_pass' => '', //Пароль от пользователя бд 
 
 	'db_table' => 'iconomy', //Таблицы iconomy
 
