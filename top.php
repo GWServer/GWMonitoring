@@ -7,13 +7,13 @@ define( 'CASE_INSENSITIVE', true );
 
 $config = array(
 
-	'db_host' => 'localhost', //Хост бд
+	'db_host' => 'https://cp.sprinthost.ru', //Хост бд
 
-	'db_name' => '', //Название бд
+	'db_name' => 'f1115908_bonys', //Название бд
 
-	'db_user' => '', //Пользователь бд
+	'db_user' => 'f1115908_bonys', //Пользователь бд
 
-	'db_pass' => '', //Пароль от пользователя бд 
+	'db_pass' => '6tSvi4S4', //Пароль от пользователя бд 
 
 	'db_table' => 'iconomy', //Таблицы iconomy
 
