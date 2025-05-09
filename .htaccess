@@ -1,8 +1,0 @@
-# Отключаем все ограничения на основе IP (если они были)
-Order Deny,Allow
-Allow from all
-
-# Отключаем базовую аутентификацию (если она была)
-<Files *>
-    Require all granted
-</Files>
