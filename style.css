@@ -155,7 +155,7 @@ footer {
     max-width: none;           /* Без обмеження по ширині */
     margin: 30px auto 25px auto;
     padding: 90px 60px;        /* Збільшуємо висоту і горизонтальні відступи */
-    font-size: 32px;           /* Збільшуємо шрифт */
+    font-size: 40px;           /* Збільшуємо шрифт */
     background-color: #ff7f50;
     color: white;
     text-align: center;
