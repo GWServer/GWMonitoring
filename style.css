@@ -151,8 +151,8 @@ footer {
 }
 .main-btn {
     display: block;
-    width: 115% !important;    /* Збільшена ширина */
-    max-width: none;
+    width: 100% !important;
+    max-width: 690px;
     margin: 30px auto 25px auto;
     padding: 35px 60px;
     font-size: 32px;
