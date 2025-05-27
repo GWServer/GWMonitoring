@@ -151,17 +151,17 @@ footer {
 }
 .main-btn {
     display: block;
-    width: 95% !important;  /* Ще ширша, щоб майже повна ширина */
-    max-width: 700px;       /* Збільшено максимальну ширину */
-    margin: 30px auto 25px auto; /* Трохи зменшені зовнішні відступи зверху і знизу */
-    padding: 25px 30px;     /* Збільшено внутрішні відступи для більшої висоти */
-    font-size: 28px;        /* Збільшено розмір шрифту */
+    width: 100% !important;  /* Займатиме всю ширину контейнера */
+    max-width: 750px;        /* Збільшено максимальну ширину */
+    margin: 30px auto 25px auto;
+    padding: 25px 40px;      /* Ще більше внутрішніх відступів для висоти */
+    font-size: 28px;
     background-color: #ff7f50;
     color: white;
     text-align: center;
     text-decoration: none;
     border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35); /* Трохи сильніша тінь */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
@@ -169,6 +169,7 @@ footer {
     background-color: #ff5722;
     transform: scale(1.07);
 }
+
 
 #one {
 	background-color: #FF1493;
