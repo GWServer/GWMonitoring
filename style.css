@@ -151,11 +151,11 @@ footer {
 }
 .main-btn {
     display: block;
-    width: 115% !important;    /* Збільшена ширина */
-    max-width: none;
+    width: 100% !important;    /* На всю ширину контейнера */
+    max-width: none;           /* Без обмеження по ширині */
     margin: 30px auto 25px auto;
-    padding: 35px 60px;
-    font-size: 32px;
+    padding: 35px 60px;        /* Збільшуємо висоту і горизонтальні відступи */
+    font-size: 32px;           /* Збільшуємо шрифт */
     background-color: #ff7f50;
     color: white;
     text-align: center;
@@ -169,7 +169,6 @@ footer {
     background-color: #ff5722;
     transform: scale(1.1);
 }
-
 
 #one {
 	background-color: #FF1493;
