@@ -154,7 +154,7 @@ footer {
     width: 100% !important;    /* На всю ширину контейнера */
     max-width: none;           /* Без обмеження по ширині */
     margin: 30px auto 25px auto;
-    padding: 60px 60px;        /* Збільшуємо висоту і горизонтальні відступи */
+    padding: 90px 60px;        /* Збільшуємо висоту і горизонтальні відступи */
     font-size: 32px;           /* Збільшуємо шрифт */
     background-color: #ff7f50;
     color: white;
