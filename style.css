@@ -151,7 +151,7 @@ footer {
 }
 .main-btn {
     display: block;
-    width: 90%;
+    width: 90% !important; /* Пріоритет над width у .btn */
     max-width: 600px;
     margin: 40px auto 20px auto;
     padding: 20px;
@@ -164,6 +164,7 @@ footer {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
+
 .main-btn:hover {
     background-color: #ff5722;
     transform: scale(1.05);
