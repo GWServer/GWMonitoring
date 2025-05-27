@@ -151,8 +151,8 @@ footer {
 }
 .main-btn {
     display: block;
-    width: 100% !important;
-    max-width: 680px;
+    width: 115% !important;    /* Збільшена ширина */
+    max-width: none;
     margin: 30px auto 25px auto;
     padding: 35px 60px;
     font-size: 32px;
@@ -169,6 +169,7 @@ footer {
     background-color: #ff5722;
     transform: scale(1.1);
 }
+
 
 #one {
 	background-color: #FF1493;
