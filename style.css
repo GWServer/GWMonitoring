@@ -151,25 +151,24 @@ footer {
 }
 .main-btn {
     display: block;
-    width: 100% !important;  /* Займатиме всю ширину контейнера */
-    max-width: 750px;        /* Збільшено максимальну ширину */
+    width: 100% !important;    /* На всю ширину контейнера */
+    max-width: none;           /* Без обмеження по ширині */
     margin: 30px auto 25px auto;
-    padding: 25px 40px;      /* Ще більше внутрішніх відступів для висоти */
-    font-size: 28px;
+    padding: 35px 60px;        /* Збільшуємо висоту і горизонтальні відступи */
+    font-size: 32px;           /* Збільшуємо шрифт */
     background-color: #ff7f50;
     color: white;
     text-align: center;
     text-decoration: none;
     border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .main-btn:hover {
     background-color: #ff5722;
-    transform: scale(1.07);
+    transform: scale(1.1);
 }
-
 
 #one {
 	background-color: #FF1493;
