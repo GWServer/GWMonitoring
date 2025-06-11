@@ -164,6 +164,29 @@ footer {
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
+.floating-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+.floating-icon:hover {
+    transform: scale(1.1);
+}
+.floating-icon img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
 
 .main-btn:hover {
     background-color: #ff5722;
