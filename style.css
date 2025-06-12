@@ -167,7 +167,7 @@ footer {
 }
 .main-btn-text {
   z-index: 2;
-  transform: translateY(50px); 
+  transform: translateY(10px); 
 
 }
 .floating-icon {
