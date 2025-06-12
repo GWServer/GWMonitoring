@@ -166,10 +166,12 @@ footer {
     overflow: hidden;
 }
 .main-btn-text {
-  z-index: 2;
-  transform: translateY(10px); 
-
+  transform: translateY(3mm);
 }
+.main-btn-icon {
+  transform: translateY(7mm);
+}
+
 .floating-icon {
     position: fixed;
     top: 20px;
