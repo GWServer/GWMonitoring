@@ -7,19 +7,37 @@
     <link rel="shortcut icon" href="images/title.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <style>
-        .floating-container {
-            top: 50px;
-            right: 20px; /* справа */
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            z-index: 9999;
-        }
+            .floating-container {
+                position: fixed;   /* Фіксуємо контейнер відносно вікна */
+                top: 50px;
+                right: 20px;
+                display: flex;           /* Вмикаємо флекс-контейнер */
+                flex-direction: column;  /* Вертикальне розташування іконок */
+                gap: 20px;               /* Відступ між іконками */
+                z-index: 9999;           /* Щоб контейнер був зверху */
+            }
 
-        .floating-icon img {
-            width: 32px;
-            height: 32px;
-        }
+            .floating-icon {
+                /* position: fixed; */   /* Видаляємо цю стрічку */
+                display: block;
+                width: 48px;
+                height: 48px;
+                background-color: white;
+                border-radius: 10px;
+                padding: 5px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                transition: transform 0.2s ease;
+            }
+
+            .floating-icon:hover {
+                transform: scale(1.1);
+            }
+
+            .floating-icon img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
     </style>
 </head>
 <body style="background-image: url(images/Coast_Sunrises_and_sunsets_Waves_USA_Ocean_Kaneohe_521540_1280x775.jpg);">
