@@ -37,7 +37,7 @@ body {
   line-height: 1.5;
 }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class */
 ul[class],
 ol[class] {
   list-style: none;
@@ -54,7 +54,7 @@ img {
   display: block;
 }
 
-/* Указываем понятную периодичность в потоке данных у article*/
+/* Указываем понятную периодичность в потоке данных у article */
 article > * + * {
   margin-top: 1em;
 }
@@ -128,45 +128,40 @@ footer {
 }
 
 .btn {
-    height: 95px;
-    width: 220px;
-    border-radius: 5%;
-    margin: 5px 7px;
-    background-color: #32dc72;
-    padding: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    display: inline-block;
-    background-repeat: no-repeat;
-    text-align: center;
-    background-position: center center;
-    background-size: 95% 85%;
+  height: 95px;
+  width: 220px;
+  border-radius: 5%;
+  margin: 5px 7px;
+  background-color: #32dc72;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center center;
+  background-size: 95% 85%;
 }
-
 
 .main-btn {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: none;
-    margin: 30px auto;
-    padding: 0;
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
-    transition: transform 0.2s ease, background-color 0.2s ease;
-    height: 155px; 
-    overflow: hidden;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 30px auto;
+  padding: 0;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  height: 155px;
+  overflow: hidden;
 }
 
-.main-btn-text {
-  transform: translateY(3mm);
-}
-.main-btn-icon {
-  transform: translateY(4mm);
-}
+.main-btn-text { transform: translateY(3mm); }
+.main-btn-icon { transform: translateY(4mm); }
 
 .main-btn:hover {
   background-color: #ff5722;
@@ -197,32 +192,18 @@ footer {
   align-items: center;
   justify-content: center;
 }
+.floating-icon:hover { transform: scale(1.1); }
+.floating-icon img { width: 100%; height: auto; display: block; }
 
-.floating-icon:hover {
-  transform: scale(1.1);
-}
-
-.floating-icon img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* ==== Кольори для блоків === */
-#one, #two, #three, #four, #five, #six {
-  background-color: #FF1493;
-}
-#seven, #eight, #nine {
-  background-color: #aa99ff;
-}
+/* ==== Кольори для блоків ==== */
+#one, #two, #three, #four, #five, #six { background-color: #FF1493; }
+#seven, #eight, #nine { background-color: #aa99ff; }
 #ten, #eleven, #twelve, #thirteen, #fourteen,
 #fifteen, #sixteen, #seventeen, #eighteen,
 #nineteen, #twenty, #twentyone, #twentytwo,
-#twentythree, #twentyfive, #twentysix, #twentyseven {
-  background-color: #FFFF00;
-}
+#twentythree, #twentyfive, #twentysix, #twentyseven { background-color: #FFFF00; }
 
-/* ==== Зображення для кнопок === */
+/* ==== Зображення для кнопок ==== */
 #one { background-image: url("images/1.png"); }
 #two { background-image: url("images/2.png"); }
 #three { background-image: url("images/3.png"); }
@@ -249,3 +230,49 @@ footer {
 #twentyfive { background-image: url("images/25.png"); }
 #twentysix { background-image: url("images/26.png"); }
 #twentyseven { background-image: url("images/27.png"); }
+
+/* ========================================================= */
+/* === НОВЕ: горизонтальні «іконки‑посилання» для .text-links === */
+.text-links {
+  display: flex;
+  flex-wrap: wrap;          /* Перенесення, якщо не хватає ширини */
+  justify-content: center;
+  gap: 10px;                /* Відстань між «іконками» */
+  padding: 20px;
+}
+
+.text-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #001f3f;             /* темно‑синій фон */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0;                          /* ховаємо текст всередині */
+  overflow: hidden;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.text-links a:hover {
+  transform: scale(1.1);
+  background-color: #003366;
+}
+
+/* Текст (href) залишається в DOM для SEO, але не видно */
+.text-links a::after {
+  content: attr(href);
+  position: absolute;
+  bottom: -9999px;
+  left: -9999px;
+}
+
+/* Якщо в <a> є <img> — відображаємо його як іконку */
+.text-links img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
