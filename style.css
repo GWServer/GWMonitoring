@@ -128,20 +128,21 @@ footer {
 }
 
 .btn {
-  height: 95px;
-  width: 220px;
-  border-radius: 5%;
-  margin: 40px;
-  background-color: #32dc72;
-  padding: 10px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  display: inline-block;
-  background-repeat: no-repeat;
-  text-align: center;
-  background-position: center center;
-  background-size: 95% 85%;
+    height: 95px;
+    width: 220px;
+    border-radius: 5%;
+    margin: 5px;
+    background-color: #32dc72;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center center;
+    background-size: 95% 85%;
 }
+
 
 .main-btn {
   position: relative;
