@@ -157,7 +157,7 @@ footer {
     border-radius: 15px;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, background-color 0.2s ease;
-    height: 130px; /* 🔹 ЗМЕНШЕНО З 180px */
+    height: 160px; /* 🔹 ЗМЕНШЕНО З 180px */
     overflow: hidden;
 }
 
@@ -173,7 +173,7 @@ footer {
   transform: scale(1.1);
 }
 
-/* ==== ОНОВЛЕНО: плаваючі іконки в стовпчик ==== */
+/* ==== Плаваючі іконки в стовпчик ==== */
 .floating-container {
   position: fixed;
   top: 20px;
