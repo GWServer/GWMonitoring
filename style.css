@@ -131,7 +131,7 @@ footer {
     height: 95px;
     width: 220px;
     border-radius: 5%;
-    margin: 5px 7px;
+    margin: 5px 6px;
     background-color: #32dc72;
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
@@ -157,7 +157,7 @@ footer {
     border-radius: 15px;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, background-color 0.2s ease;
-    height: 160px; /* 🔹 ЗМЕНШЕНО З 180px */
+    height: 155px; 
     overflow: hidden;
 }
 
