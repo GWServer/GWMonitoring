@@ -1,4 +1,3 @@
 # GWMonitoring
-GrayWorldMonitoring
-server Minecraft
+GrayWorld Server Minecraft
 ip: GrayWorld.pro
