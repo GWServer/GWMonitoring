@@ -145,21 +145,22 @@ footer {
 
 
 .main-btn {
-  position: relative;
-  display: block;
-  width: 100%;
-  max-width: none;
-  margin: 30px auto;
-  padding: 0;
-  background-color: transparent;
-  color: white;
-  text-decoration: none;
-  border-radius: 15px;
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  height: 180px;
-  overflow: hidden;
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 30px auto;
+    padding: 0;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    height: 130px; /* 🔹 ЗМЕНШЕНО З 180px */
+    overflow: hidden;
 }
+
 .main-btn-text {
   transform: translateY(3mm);
 }
