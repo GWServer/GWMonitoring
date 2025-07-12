@@ -37,7 +37,7 @@ body {
   line-height: 1.5;
 }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class */
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
 ol[class] {
   list-style: none;
@@ -54,7 +54,7 @@ img {
   display: block;
 }
 
-/* Указываем понятную периодичность в потоке данных у article */
+/* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {
   margin-top: 1em;
 }
@@ -67,7 +67,7 @@ select {
   font: inherit;
 }
 
-/* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -110,14 +110,12 @@ header h1 {
 .works {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 
 footer {
   height: 200px;
 }
-
-/***********************/
 
 .redtextbold {
   text-align: center;
@@ -133,18 +131,16 @@ footer {
   height: 95px;
   width: 220px;
   border-radius: 5%;
+  margin: 40px;
   background-color: #32dc72;
+  padding: 10px;
   font-family: 'Open Sans', sans-serif;
-  font: black;
   font-weight: bold;
   display: inline-block;
   background-repeat: no-repeat;
   text-align: center;
   background-position: center center;
   background-size: 95% 85%;
-  margin: 8px;
-  padding: 10px;
-  margin-top: 50px;
 }
 
 .main-btn {
@@ -163,11 +159,9 @@ footer {
   height: 180px;
   overflow: hidden;
 }
-
 .main-btn-text {
   transform: translateY(3mm);
 }
-
 .main-btn-icon {
   transform: translateY(4mm);
 }
@@ -177,48 +171,19 @@ footer {
   transform: scale(1.1);
 }
 
-/* Кнопки моніторингів */
-#one      { background-color: #FF1493; background-image: url("images/1.png"); }
-#two      { background-color: #FF1493; background-image: url("images/2.png"); }
-#three    { background-color: #FF1493; background-image: url("images/3.png"); }
-#four     { background-color: #FF1493; background-image: url("images/4.png"); }
-#five     { background-color: #FF1493; background-image: url("images/5.png"); }
-#six      { background-color: #FF1493; background-image: url("images/6.png"); }
-#seven    { background-color: #aa99ff; background-image: url("images/7.png"); }
-#eight    { background-color: #aa99ff; background-image: url("images/8.png"); }
-#nine     { background-color: #aa99ff; background-image: url("images/9.png"); }
-#ten      { background-color: #FFFF00; background-image: url("images/10.png"); }
-#eleven   { background-color: #FFFF00; background-image: url("images/11.png"); }
-#twelve   { background-color: #FFFF00; background-image: url("images/12.png"); }
-#thirteen { background-color: #FFFF00; background-image: url("images/13.png"); }
-#fourteen { background-color: #FFFF00; background-image: url("images/14.png"); }
-#fifteen  { background-color: #FFFF00; background-image: url("images/15.png"); }
-#sixteen  { background-color: #FFFF00; background-image: url("images/16.png"); }
-#seventeen{ background-color: #FFFF00; background-image: url("images/17.png"); }
-#eighteen { background-color: #FFFF00; background-image: url("images/18.png"); }
-#nineteen { background-color: #FFFF00; background-image: url("images/19.png"); }
-#twenty   { background-color: #FFFF00; background-image: url("images/20.png"); }
-#twentyone{ background-color: #FFFF00; background-image: url("images/21.png"); }
-#twentytwo{ background-color: #FFFF00; background-image: url("images/22.png"); }
-#twentythree { background-color: #FFFF00; background-image: url("images/23.png"); }
-#twentyfive  { background-color: #FFFF00; background-image: url("images/25.png"); }
-#twentysix   { background-color: #FFFF00; background-image: url("images/26.png"); }
-#twentyseven { background-color: #FFFF00; background-image: url("images/27.png"); }
-
-/* Стилі для вертикального контейнера з іконками */
+/* ==== ОНОВЛЕНО: плаваючі іконки в стовпчик ==== */
 .floating-container {
   position: fixed;
   top: 20px;
   right: 20px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 15px;
   z-index: 9999;
 }
 
-/* Стилі для окремих іконок */
 .floating-icon {
-  display: block;
   width: 48px;
   height: 48px;
   background-color: white;
@@ -226,6 +191,9 @@ footer {
   padding: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .floating-icon:hover {
@@ -237,3 +205,45 @@ footer {
   height: auto;
   display: block;
 }
+
+/* ==== Кольори для блоків === */
+#one, #two, #three, #four, #five, #six {
+  background-color: #FF1493;
+}
+#seven, #eight, #nine {
+  background-color: #aa99ff;
+}
+#ten, #eleven, #twelve, #thirteen, #fourteen,
+#fifteen, #sixteen, #seventeen, #eighteen,
+#nineteen, #twenty, #twentyone, #twentytwo,
+#twentythree, #twentyfive, #twentysix, #twentyseven {
+  background-color: #FFFF00;
+}
+
+/* ==== Зображення для кнопок === */
+#one { background-image: url("images/1.png"); }
+#two { background-image: url("images/2.png"); }
+#three { background-image: url("images/3.png"); }
+#four { background-image: url("images/4.png"); }
+#five { background-image: url("images/5.png"); }
+#six { background-image: url("images/6.png"); }
+#seven { background-image: url("images/7.png"); }
+#eight { background-image: url("images/8.png"); }
+#nine { background-image: url("images/9.png"); }
+#ten { background-image: url("images/10.png"); }
+#eleven { background-image: url("images/11.png"); }
+#twelve { background-image: url("images/12.png"); }
+#thirteen { background-image: url("images/13.png"); }
+#fourteen { background-image: url("images/14.png"); }
+#fifteen { background-image: url("images/15.png"); }
+#sixteen { background-image: url("images/16.png"); }
+#seventeen { background-image: url("images/17.png"); }
+#eighteen { background-image: url("images/18.png"); }
+#nineteen { background-image: url("images/19.png"); }
+#twenty { background-image: url("images/20.png"); }
+#twentyone { background-image: url("images/21.png"); }
+#twentytwo { background-image: url("images/22.png"); }
+#twentythree { background-image: url("images/24.png"); }
+#twentyfive { background-image: url("images/25.png"); }
+#twentysix { background-image: url("images/26.png"); }
+#twentyseven { background-image: url("images/27.png"); }
