@@ -32,4 +32,4 @@
 ||timing-js-menu.xyz^
 ||adtec.ru^
 ||w.rulive.ru^
-||https://gsmserver.com^
+||gsmserver.com^
